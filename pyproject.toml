@@ -1,5 +1,5 @@
 [project]
-name = "mcp"
+name = "mcp-tutorial"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,10 +9,11 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "fastmcp>=2.3.0rc1",
+    "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
-mcp = "mcp:main"
+mcp = "mcp_tutorial:main"
 
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
