@@ -21,10 +21,9 @@ async def main():
             "args": [str(mcp_server_script)],
         },
         
-        "data_fetch_mcp_stdio":{
-            "transport":"stdio",
-            "command": os.path.join(venv_path, "Scripts", "python.exe") ,
-            "args": [str(mcp_server_script)],
+        "data_fetch_mcp_http":{
+            "transport":"streamable-http",
+            "url":"http://localhost:8050/mcp"
         }
     }
     )
